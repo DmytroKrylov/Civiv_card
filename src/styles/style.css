@@ -374,6 +374,7 @@ body {
   font-size: 12px;
   line-height: 14.32px;
   color: #161c2d;
+  padding: 10px 5px;
 }
 @media screen and (min-width: 1440px) {
   .card-link {
@@ -395,6 +396,21 @@ body {
   width: 16px;
   height: 16px;
 }
+
+.card-link.active {
+  background-color: #aac004;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+}
+
+.card-link.active::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/svg8.svg); /* Вказуємо нову іконку */
+}
+
 @media screen and (min-width: 1440px) {
   .card-link::after {
     width: 19px;
@@ -533,4 +549,30 @@ body {
     width: 25px;
     height: 25px;
   }
+}
+
+.collapse__flex {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 17.9px;
+  color: #939393;
+  transition: none;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 0 0 0.1rem rgba(170, 192, 4, 1);
+  color: #161c2d;
+}
+
+.card__desk {
+  font-size: 12px;
+  line-height: 14.32px;
+  color: #939393;
 }
