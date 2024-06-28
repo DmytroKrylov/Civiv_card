@@ -52,7 +52,6 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-
             <div>
               <p class="card__article">Артикул:C20024-2</p>
               <p class="card__delivery">
@@ -207,9 +206,136 @@
               </ul>
             </div>
           </div>
+
           <div class="collapse" id="collapseSpecifications">
-            <p class="card__desk">Характеристики</p>
+            <div id="accordion" class="accordion__margin">
+              <div>
+                <a
+                  class="card-link"
+                  data-toggle="collapse"
+                  href="#collapseSpecificationsOne"
+                  onclick="toggleIcon(this)"
+                >
+                  Основні характеристики
+                </a>
+              </div>
+              <div
+                id="collapseSpecificationsOne"
+                class="collapse"
+                data-parent="#accordion"
+              >
+                <div class="card-body card__body__table">
+                  <table>
+                    <tr>
+                      <th>Тип товару</th>
+                      <td>Ножі</td>
+                    </tr>
+                    <tr>
+                      <th>Бренд</th>
+                      <td>Civivi</td>
+                    </tr>
+                    <tr>
+                      <th>Тип ножа</th>
+                      <td>складний</td>
+                    </tr>
+                    <tr>
+                      <th>Тип замка</th>
+                      <td>Liner Lock</td>
+                    </tr>
+                    <tr>
+                      <th>Вид ножа</th>
+                      <td>кишеньковий, туристичний, на кожен день</td>
+                    </tr>
+                    <tr>
+                      <th>Тип заточки</th>
+                      <td>прямий</td>
+                    </tr>
+                    <tr>
+                      <th>Сталь клинка</th>
+                      <td>нержавіюча</td>
+                    </tr>
+                    <tr>
+                      <th>Марка сталі</th>
+                      <td>14C28N</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div id="accordion">
+              <div>
+                <a
+                  class="card-link card-link__bg"
+                  data-toggle="collapse"
+                  href="#collapseSpecificationsTwo"
+                  onclick="toggleIcon(this)"
+                >
+                  Зовнішні характеристики
+                </a>
+              </div>
+              <div
+                id="collapseSpecificationsTwo"
+                class="collapse"
+                data-parent="#accordion"
+              >
+                <div class="card-body card__body__table">
+                  <table>
+                    <tr>
+                      <th>Загальна довжина</th>
+                      <td>154.7 мм</td>
+                    </tr>
+                    <tr>
+                      <th>Довжина клинка</th>
+                      <td>65 мм</td>
+                    </tr>
+                    <tr>
+                      <th>Товщина клинка</th>
+                      <td>2 мм</td>
+                    </tr>
+                    <tr>
+                      <th>Довжина руків'я</th>
+                      <td>91.2 мм</td>
+                    </tr>
+                    <tr>
+                      <th>Колір клинка</th>
+                      <td><span class="td__color"></span></td>
+                    </tr>
+                    <tr>
+                      <th>Колір руків'я</th>
+                      <td>
+                        <div class="td__color__flex">
+                          <span class="black"></span>
+                          <span class="gray"></span>
+                          <span class="blue"></span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Твердість клинка</th>
+                      <td>58-60 HRC</td>
+                    </tr>
+                    <tr>
+                      <th>Кишенькова кліпса</th>
+                      <td>Так</td>
+                    </tr>
+                    <tr>
+                      <th>Дизайнер</th>
+                      <td>Justin Lundquist</td>
+                    </tr>
+                    <tr>
+                      <th>Вага</th>
+                      <td>58.6 г</td>
+                    </tr>
+                    <tr>
+                      <th>Гарантія</th>
+                      <td>12 місяців</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="collapse" id="collapseReviews">
             <p class="card__desk">Відгуки задоволених покіпців</p>
           </div>
@@ -220,6 +346,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- Initialize Swiper -->
     <script>
       const swiper = new Swiper('.mySwiper', {
@@ -263,9 +390,28 @@
 
             // Перемикнути стан цільового блоку
             targetElement.classList.toggle('show');
+
+            // Якщо це "Характеристики", розгорнути вкладений блок і додати клас active
+            if (targetId === 'collapseSpecifications') {
+              const innerCollapse = document.getElementById(
+                'collapseSpecificationsOne'
+              );
+              innerCollapse.classList.add('show');
+
+              // Додати клас active до посилання "Основні характеристики"
+              const cardLink = document.querySelector(
+                '.card-link[href="#collapseSpecificationsOne"]'
+              );
+              cardLink.classList.add('active');
+            }
           });
         });
       });
+
+      // Функція для перемикання іконки (опціонально, якщо є додаткова логіка)
+      function toggleIcon(element) {
+        element.classList.toggle('active');
+      }
     </script>
   </body>
 </html>
