@@ -553,8 +553,13 @@ body {
 
 .collapse__flex {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .collapse__flex {
+    margin-bottom: 35px;
+  }
 }
 
 .btn {
@@ -563,6 +568,12 @@ body {
   line-height: 17.9px;
   color: #939393;
   transition: none;
+}
+@media screen and (min-width: 1440px) {
+  .btn {
+    font-size: 20px;
+    line-height: 23.87px;
+  }
 }
 
 .btn.focus,
@@ -575,4 +586,82 @@ body {
   font-size: 12px;
   line-height: 14.32px;
   color: #939393;
+  margin-bottom: 30px;
 }
+@media screen and (min-width: 1440px) {
+  .card__desk {
+    font-size: 20px;
+    line-height: 23.87px;
+  }
+}
+
+.card__video {
+  display: block;
+  margin: 0 auto;
+  width: 310px;
+  height: 220px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 1440px) {
+  .card__video {
+    width: 100%;
+    height: 430px;
+    margin-bottom: 40px;
+  }
+}
+
+.card__bottomImgFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 1440px) {
+  .card__bottomImgFlex {
+    margin-bottom: 40px;
+  }
+}
+
+.bottom__img {
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .bottom__img {
+    width: 90%;
+  }
+}
+
+.card__bottomTitle {
+  font-size: 12px;
+  line-height: 14.32px;
+  color: #161c2d;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .card__bottomTitle {
+    font-size: 20px;
+    line-height: 23.87px;
+    margin-bottom: 20px;
+  }
+}
+
+.card__bottomDesc {
+  font-size: 12px;
+  line-height: 14.32px;
+  color: #939393;
+}
+@media screen and (min-width: 1440px) {
+  .card__bottomDesc {
+    font-size: 20px;
+    line-height: 23.87px;
+  }
+}
+
+/* Стилі згортання та розкортання Collapse */
+.collapse {
+  display: none;
+}
+.collapse.show {
+  display: block;
+}
+/* Стилі згортання та розкортання Collapse */
