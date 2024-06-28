@@ -577,7 +577,10 @@ body {
 }
 
 .btn.focus,
-.btn:focus {
+.btn:focus,
+.btn:active,
+.btn:target,
+.btn:hover {
   box-shadow: 0 0 0 0.1rem rgba(170, 192, 4, 1);
   color: #161c2d;
 }
