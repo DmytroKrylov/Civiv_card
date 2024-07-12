@@ -16,6 +16,9 @@ ul {
 }
 
 body {
+  min-width: 360px;
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: 'SF UI Text Light';
   font-weight: 300;
 }
@@ -71,9 +74,10 @@ body {
 .mainContainer {
   padding: 45px 25px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .mainContainer {
-    padding: 45px 205px;
+    /* padding: 45px 205px; */
+    padding: 45px 100px;
   }
 }
 
@@ -81,7 +85,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__flex {
     display: flex;
     justify-content: space-between;
@@ -96,14 +100,14 @@ body {
   color: #161c2d;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__title {
     font-size: 30px;
     line-height: 35.8px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .swiper__width {
     width: 65%;
   }
@@ -118,7 +122,7 @@ body {
 .swiper-button-prev:after {
   font-size: 15px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .swiper-button-next:after,
   .swiper-button-prev:after {
     font-size: 20px;
@@ -134,7 +138,7 @@ body {
   height: 7px;
   background-color: #939393;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .swiper-pagination-bullet {
     width: 14px;
     height: 14px;
@@ -151,7 +155,7 @@ body {
   color: #939393;
   margin-bottom: 15px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__article {
     font-size: 18px;
     line-height: 21.48px;
@@ -189,7 +193,7 @@ body {
   color: #161c2d;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__price {
     font-size: 30px;
     line-height: 35.8px;
@@ -203,7 +207,7 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__availability {
     margin-bottom: 30px;
   }
@@ -217,7 +221,7 @@ body {
   line-height: 11.93px;
   color: #939393;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__left {
     font-size: 18px;
     line-height: 21.48px;
@@ -234,7 +238,7 @@ body {
   width: 13px;
   height: 16px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__left::before {
     width: 16px;
     height: 19px;
@@ -249,7 +253,7 @@ body {
   line-height: 11.93px;
   color: #939393;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__right {
     font-size: 18px;
     line-height: 21.48px;
@@ -266,7 +270,7 @@ body {
   width: 15px;
   height: 13px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__right::before {
     width: 19px;
     height: 17px;
@@ -279,7 +283,7 @@ body {
   gap: 10px;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__color {
     margin-bottom: 30px;
   }
@@ -290,7 +294,7 @@ body {
   line-height: 17.9px;
   color: #161c2d;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__items {
     font-size: 18px;
     line-height: 21.48px;
@@ -304,7 +308,7 @@ body {
   border-radius: 50px;
   background-color: #1e1e1e;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__black {
     width: 20px;
     height: 20px;
@@ -318,7 +322,7 @@ body {
   border-radius: 50px;
   background-color: #9d9d9d;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__gray {
     width: 20px;
     height: 20px;
@@ -332,7 +336,7 @@ body {
   border-radius: 50px;
   background-color: #444bfe;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__blue {
     width: 20px;
     height: 20px;
@@ -351,7 +355,7 @@ body {
   border-radius: 5px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__button {
     font-size: 20px;
     line-height: 23.87px;
@@ -361,7 +365,7 @@ body {
 .accordion__margin {
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .accordion__margin {
     margin-bottom: 30px;
   }
@@ -376,7 +380,7 @@ body {
   color: #161c2d;
   padding: 10px 5px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card-link {
     font-size: 18px;
     line-height: 21.48px;
@@ -411,7 +415,7 @@ body {
   background-image: url(../images/svg8.svg); /* Вказуємо нову іконку */
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card-link::after {
     width: 19px;
     height: 19px;
@@ -423,7 +427,7 @@ body {
   line-height: 14.32px;
   color: #939393;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card-body {
     font-size: 20px;
     line-height: 23.87px;
@@ -433,7 +437,7 @@ body {
 .card__cash {
   margin-bottom: 15px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__cash {
     margin-bottom: 30px;
   }
@@ -445,7 +449,7 @@ body {
   color: #161c2d;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__oplata {
     font-size: 18px;
     line-height: 21.48px;
@@ -480,7 +484,7 @@ body {
   width: 38px;
   height: 29px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .svg4::before {
     width: 51px;
     height: 38px;
@@ -496,7 +500,7 @@ body {
   width: 43px;
   height: 36px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .svg5::before {
     width: 60px;
     height: 51px;
@@ -512,7 +516,7 @@ body {
   width: 36px;
   height: 35px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .svg6::before {
     width: 52px;
     height: 50px;
@@ -527,7 +531,7 @@ body {
   align-items: center;
   gap: 5px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__discount {
     font-size: 18px;
     line-height: 21.48px;
@@ -544,7 +548,7 @@ body {
   width: 15px;
   height: 15px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__discount::before {
     width: 25px;
     height: 25px;
@@ -556,7 +560,7 @@ body {
   gap: 10px;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .collapse__flex {
     margin-bottom: 35px;
   }
@@ -569,7 +573,7 @@ body {
   color: #939393;
   transition: none;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .btn {
     font-size: 20px;
     line-height: 23.87px;
@@ -591,7 +595,7 @@ body {
   color: #939393;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__desk {
     font-size: 20px;
     line-height: 23.87px;
@@ -605,7 +609,7 @@ body {
   height: 220px;
   margin-bottom: 25px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__video {
     width: 100%;
     height: 430px;
@@ -619,7 +623,7 @@ body {
   gap: 5px;
   margin-bottom: 25px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__bottomImgFlex {
     margin-bottom: 40px;
   }
@@ -628,7 +632,7 @@ body {
 .bottom__img {
   width: 100%;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .bottom__img {
     width: 90%;
   }
@@ -640,7 +644,7 @@ body {
   color: #161c2d;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__bottomTitle {
     font-size: 20px;
     line-height: 23.87px;
@@ -653,7 +657,7 @@ body {
   line-height: 14.32px;
   color: #939393;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .card__bottomDesc {
     font-size: 20px;
     line-height: 23.87px;
@@ -689,7 +693,7 @@ td {
   padding: 10px;
   text-align: center;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   th,
   td {
     text-align: left;
@@ -703,7 +707,7 @@ td {
   background-color: #9d9d9d;
   border-radius: 50%;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .td__color {
     width: 20px;
     height: 20px;
@@ -717,7 +721,7 @@ td {
   background-color: #1e1e1e;
   border-radius: 50%;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .black {
     width: 20px;
     height: 20px;
@@ -731,7 +735,7 @@ td {
   background-color: #9d9d9d;
   border-radius: 50%;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .gray {
     width: 20px;
     height: 20px;
@@ -745,7 +749,7 @@ td {
   background-color: #444bfe;
   border-radius: 50%;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .blue {
     width: 20px;
     height: 20px;
