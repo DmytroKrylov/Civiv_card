@@ -85,10 +85,11 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
   .card__flex {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
   }
 }
 
@@ -104,6 +105,12 @@ body {
   .card__title {
     font-size: 30px;
     line-height: 35.8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper__width {
+    width: 60%;
   }
 }
 
